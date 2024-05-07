@@ -10,6 +10,9 @@ const Navigation = () => {
       <Link to="/setup">
         <Button colorScheme="teal">Setup VPN</Button>
       </Link>
+      <Link to="/manage-connections">
+        <Button colorScheme="teal">Manage Connections</Button>
+      </Link>
     </Flex>
   );
 };

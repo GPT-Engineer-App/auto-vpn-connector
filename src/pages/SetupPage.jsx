@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 
 function SetupPage() {
   return (
@@ -7,10 +7,10 @@ function SetupPage() {
       <Text fontSize="xl" mb={4}>
         Setup your application here.
       </Text>
-      <Text fontSize="lg">To install the open-source VPN application, use the following command:</Text>
-      <Text as="pre" p={3} bg="gray.100" borderRadius="md">
-        curl -Ssf https://diode.io/install.sh | bash
-      </Text>
+      <Text fontSize="lg">Click the button below to install the open-source VPN application:</Text>
+      <Button colorScheme="teal" onClick={() => window.open("https://diode.io/install.sh", "_blank")}>
+        Install VPN
+      </Button>
     </Box>
   );
 }
